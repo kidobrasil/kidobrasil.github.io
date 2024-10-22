@@ -239,39 +239,86 @@
         </div>
     </section>
 
-    <!-- Contact Section-->
-    <section id="contact-section" class="relative w-full min-h-screen bg-gray-100 flex flex-col justify-center items-center py-16 px-6">
-        <!-- Three.js Canvas -->
-        <div id="contact-canvas-container" class="absolute inset-0 z-0"></div>
-        
-        <!-- Contact Form and Content -->
-        <div class="relative z-10 w-full max-w-xl bg-white shadow-lg rounded-lg p-8">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-center w-full mb-8">Contact Us</h2>
-            <p class="text-lg md:text-xl text-gray-600 text-center max-w-2xl mb-8">
-                We'd love to hear from you! Whether you have a question or just want to say hi, feel free to reach out to us.
-            </p>
-            
-            <!-- Contact Form -->
-            <form action="https://formspree.io/f/mnnqnvag" method="POST" class="space-y-6">
-                <div>
-                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
-                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+    <!-- FAQ Section with Animation -->
+    <section id="faq-section" class="relative w-full min-h-screen bg-gray-100 flex flex-col justify-center items-center py-16 px-6">
+        <!-- FAQ Content -->
+        <div class="relative z-10 w-full max-w-2xl bg-white shadow-lg rounded-lg p-8">
+            <!-- FAQ Heading -->
+            <h2 class="text-4xl md:text-5xl font-extrabold text-center w-full mb-8">Frequently Asked Questions</h2>
+
+            <!-- FAQ Items -->
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+                    <button class="w-full flex justify-between items-center p-4 text-lg font-semibold focus:outline-none" data-target="#faq1">
+                        <span>What is Kido Solutions?</span>
+                        <svg class="w-6 h-6 text-gray-600 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq1" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-4 text-gray-700">
+                            Kido Solutions is a pediatric healthcare startup focused on designing medical devices that are tailored to the unique needs of young patients.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
-                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+
+                <!-- FAQ 2 -->
+                <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+                    <button class="w-full flex justify-between items-center p-4 text-lg font-semibold focus:outline-none" data-target="#faq2">
+                        <span>How does your product work?</span>
+                        <svg class="w-6 h-6 text-gray-600 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq2" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-4 text-gray-700">
+                            Our product simplifies pediatric airway management with cutting-edge technology that ensures precise, effective, and safe intubation for young patients.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
-                    <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"></textarea>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+                    <button class="w-full flex justify-between items-center p-4 text-lg font-semibold focus:outline-none" data-target="#faq3">
+                        <span>Is your product FDA approved?</span>
+                        <svg class="w-6 h-6 text-gray-600 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq3" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-4 text-gray-700">
+                            We are currently undergoing the process of securing FDA approval and expect to complete it by the end of the year.
+                        </p>
+                    </div>
                 </div>
-                <button type="submit" class="w-full bg-[#2f78ba] text-white font-bold py-2 px-4 rounded-md hover:bg-[#225b8a]">
-                    Send Message
-                </button>
-                
-            </form>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+                    <button class="w-full flex justify-between items-center p-4 text-lg font-semibold focus:outline-none" data-target="#faq4">
+                        <span>How can I request a demo?</span>
+                        <svg class="w-6 h-6 text-gray-600 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq4" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-4 text-gray-700">
+                            You can request a demo by contacting us through our website or emailing us directly at demo@kidosolutions.com.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action: Get in Touch -->
+            <div class="mt-8 text-center">
+                <a href="#" class="inline-block bg-[#2f78ba] text-white py-3 px-6 rounded-md font-bold hover:bg-[#225b8a] transition-all duration-300">
+                    Get in Touch
+                </a>
+            </div>
         </div>
     </section>
+
+
 
     <!-- Three.js Particle Animation Script -->
     <script type="module" src="./js/home.js"></script>
@@ -279,6 +326,6 @@
     <script type="module" src="./js/market.js"></script>
     <script type="module" src="./js/solution.js"></script>
     <script type="module" src="./js/roadmap.js"></script>
-    <script type="module" src="./js/contact.js"></script>
+    <script type="module" src="./js/faq.js"></script>
 </body>
 </html>
