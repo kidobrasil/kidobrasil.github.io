@@ -6,6 +6,10 @@ body {
 html {
     scroll-behavior: smooth; /* Enable smooth scrolling */
 }
+.market-content {
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
 
 .content-wrapper {
     position: absolute;
