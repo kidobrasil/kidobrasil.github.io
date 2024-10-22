@@ -6,6 +6,21 @@ body, html {
   scroll-behavior: smooth;
   width: 100vw;
 }
+/* Optional: Specify Montserrat for headings and Open Sans for body */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;  /* Heading color */
+}
+
+p, a, li {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;  /* Text and link color */
+}
+
+a {
+  color: #fb9250;  /* Custom link color */
+  text-decoration: none;
+}
 
 .market-content {
   opacity: 0;
