@@ -1,12 +1,11 @@
-body {
+body, html {
     margin: 0;
     overflow-x: hidden;
     font-family: Arial, sans-serif;
-    width: 100%;
-}
-html {
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-}
+    scroll-behavior: smooth;
+    width: 100vw;
+  }
+  
 .market-content {
     opacity: 0; /* Hidden by default */
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
