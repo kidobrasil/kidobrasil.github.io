@@ -35,7 +35,7 @@ function init() {
         color: 0xfb9250,
         size: 0.05,
         transparent: true,
-        opacity: 0.2,
+        opacity: 0.6,
     });
 
     particleSystem = new THREE.Points(particles, particleMaterial);
