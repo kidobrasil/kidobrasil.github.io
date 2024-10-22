@@ -9,7 +9,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('canvas-container').appendChild(renderer.domElement);
 
 // Particle setup with multiple colors
-const particlesCount = 500; // Reduced particle count for mobile performance
+const particlesCount = 250; // Reduced particle count for mobile performance
 const particlesGeometry = new THREE.BufferGeometry();
 const positions = new Float32Array(particlesCount * 3);
 const colors = new Float32Array(particlesCount * 3);
