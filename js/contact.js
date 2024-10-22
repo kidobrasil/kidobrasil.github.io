@@ -42,7 +42,7 @@ function initPhysicsAnimation() {
 
         // Three.js visual sphere
         const sphereGeometry = new THREE.SphereGeometry(radius, 32, 32);
-        const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xffc39a });
+        const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0x2f78ba });
         const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
         scene.add(sphereMesh);
 
