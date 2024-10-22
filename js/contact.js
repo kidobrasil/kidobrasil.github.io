@@ -23,7 +23,7 @@ function initPhysicsAnimation() {
 
     // Create physics world using Cannon.js
     const world = new CANNON.World();
-    world.gravity.set(0, -2, 0); // Reduced gravity for slower fall
+    world.gravity.set(0, -9.82, 0); // Earth-like gravity
 
     // Create a floor in the physics world
     const floorBody = new CANNON.Body({
@@ -42,7 +42,8 @@ function initPhysicsAnimation() {
 
         // Three.js visual sphere
         const sphereGeometry = new THREE.SphereGeometry(radius, 32, 32);
-        const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0x2f78ba });
+        const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xffc39a
+        });
         const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
         scene.add(sphereMesh);
 
@@ -54,13 +55,19 @@ function initPhysicsAnimation() {
         });
         world.addBody(sphereBody);
 
+        // Add collision detection
+        sphereBody.addEventListener("collide", function(event) {
+            // Collision detected, change sphere color
+            sphereMesh.material.color.set(0x2f78ba); // Change to red on collision
+        });
+
         // Add both bodies to the array for tracking
         objects.push({ mesh: sphereMesh, body: sphereBody });
     }
 
-    // Create multiple spheres with a longer delay
+    // Create multiple spheres with a shorter delay (200ms)
     for (let i = 0; i < 10; i++) {
-        setTimeout(createFallingSphere, i * 1000); // Now creating a sphere every 1000ms (1 second)
+        setTimeout(createFallingSphere, i * 200); // Now creating a sphere every 200ms
     }
 
     // Physics and rendering loop
@@ -88,6 +95,7 @@ function initPhysicsAnimation() {
         camera.updateProjectionMatrix();
     });
 }
+
 
 // Initialize the animation when the DOM is ready
 document.addEventListener('DOMContentLoaded', initPhysicsAnimation);
