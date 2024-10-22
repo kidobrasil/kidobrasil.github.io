@@ -38,8 +38,8 @@ const particlesMaterial = new THREE.PointsMaterial({
     map: particleTexture,
     vertexColors: true,
     transparent: true,
-    alphaTest: 0.6,
-    opacity: 0.6,
+    alphaTest: 0.8,
+    opacity: 0.8,
 });
 
 const particles = new THREE.Points(particlesGeometry, particlesMaterial);
