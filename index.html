@@ -107,63 +107,77 @@
     
     
 
- <!-- New Section: Market -->
-<section id="market-breakdown" class="w-full min-h-screen bg-gray-50 flex flex-col justify-center items-center py-12 px-6">
-    <!-- Heading -->
-    <h2 class="text-4xl md:text-5xl font-extrabold text-center w-full text-gray-800 mb-8">Market Breakdown: From Total Opportunity to Captured Market</h2>
-    
-    <!-- Flex Container for Images and Text -->
-    <div class="flex flex-col md:flex-row w-full max-w-7xl items-start gap-12">
+    <!-- New Section: Market -->
+    <section id="market-breakdown" class="w-full min-h-screen bg-gray-50 flex flex-col justify-center items-center py-12 px-6">
+        <!-- Heading -->
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center w-full text-gray-800 mb-8">Market Breakdown: From Total Opportunity to Captured Market</h2>
         
-        <!-- Left Column: Stacked Images -->
-        <div class="md:w-1/2 space-y-6"> <!-- space-y-6 adds vertical space between images -->
-            <!-- Waterfall Chart (First Image) -->
-            <div class="relative w-full h-full shadow-lg rounded-xl overflow-hidden">
-                <img src="images/market.png " alt="Market Breakdown Waterfall Chart" class="w-full h-auto rounded-xl">
-            </div>
+        <!-- Flex Container for Images and Text -->
+        <div class="flex flex-col md:flex-row w-full max-w-7xl items-start gap-12">
+            
+            <!-- Left Column: Stacked Images -->
+            <div class="md:w-1/2 space-y-6"> <!-- space-y-6 adds vertical space between images -->
+                <!-- Waterfall Chart (First Image) -->
+                <div class="relative w-full h-full shadow-lg rounded-xl overflow-hidden">
+                    <img src="images/market.png " alt="Market Breakdown Waterfall Chart" class="w-full h-auto rounded-xl">
+                </div>
 
-            <!-- Second Image (Newly Added) -->
-            <div class="relative w-full h-full shadow-lg rounded-xl overflow-hidden pt-4">
-                <img src="images/gap.jpeg" alt="Second Market Breakdown Chart" class="w-full h-auto rounded-xl">
+                <!-- Second Image (Newly Added) -->
+                <div class="relative w-full h-full shadow-lg rounded-xl overflow-hidden pt-4">
+                    <img src="images/gap.jpeg" alt="Second Market Breakdown Chart" class="w-full h-auto rounded-xl">
+                </div>
             </div>
-        </div>
-        
-        <!-- Right Column: Text with Animation -->
-        <div class="md:w-1/2 md:pl-8 text-left animate__animated animate__fadeInUp">
-            <!-- Box 1 -->
-            <div class="p-6 mb-6 bg-white shadow-lg rounded-lg border-l-4 border-blue-500 animate__animated animate__fadeInLeft">
-                <h3 class="text-2xl font-bold mb-2 text-blue-500">Total Addressable Market (TAM)</h3>
+            
+            <!-- Right Column: Text with Animation -->
+            <div class="md:w-1/2 md:pl-8 text-left animate__animated animate__fadeInUp">
+                <!-- Box 1 -->
+                <!-- Box 1 (Total Addressable Market - TAM) -->
+            <div class="p-6 mb-6 bg-white shadow-lg rounded-lg border-l-4 border-[#2f78ba] animate__animated animate__fadeInLeft delay-400">
+                <h3 class="text-2xl font-bold mb-2">Total Addressable Market (TAM)</h3>
                 <p class="text-gray-600">
                     The largest potential market, combining all possible pediatric and adult patients, valued at <strong>$187.8 million</strong>.
                 </p>
             </div>
 
-            <!-- Box 2 -->
-            <div class="p-6 mb-6 bg-white shadow-lg rounded-lg border-l-4 border-red-500 animate__animated animate__fadeInUp">
-                <h3 class="text-2xl font-bold mb-2 text-red-500">Available Market for Services (SAM)</h3>
+            <!-- Box 2 (Available Market for Services - SAM) -->
+            <div class="p-6 mb-6 bg-white shadow-lg rounded-lg border-l-4 border-[#fb9250] animate__animated animate__fadeInUp delay-400">
+                <h3 class="text-2xl font-bold mb-2 text-[#fb9250]">Available Market for Services (SAM)</h3>
                 <p class="text-gray-600">
                     Focusing specifically on children under 15, this segment reduces to <strong>$28.17 million</strong>.
                 </p>
             </div>
 
-            <!-- Box 3 -->
-            <div class="p-6 mb-6 bg-white shadow-lg rounded-lg border-l-4 border-green-500 animate__animated animate__fadeInRight">
-                <h3 class="text-2xl font-bold mb-2 text-green-500">Captured Market (SOM)</h3>
+            <!-- Box 3 (Captured Market - SOM) -->
+            <div class="p-6 mb-6 bg-white shadow-lg rounded-lg border-l-4 border-[#5ab993] animate__animated animate__fadeInRight delay-400">
+                <h3 class="text-2xl font-bold mb-2 text-[#5ab993]">Captured Market (SOM)</h3>
                 <p class="text-gray-600">
                     The most relevant market, focusing on children under 1 year, where we expect to engage directly, valued at <strong>$5.63 million</strong>.
                 </p>
             </div>
 
-            <!-- Conclusion Box -->
-            <div class="p-6 bg-white shadow-lg rounded-lg border-l-4 border-gray-500 animate__animated animate__bounceIn">
-                <h3 class="text-2xl font-bold mb-2 text-gray-800">Conclusion</h3>
-                <p class="text-gray-600">
-                    The Stacked Bar Chart shows the progression from the broad Total Addressable Market (TAM) to the more focused segments where our solutions are most effective, including the Available Market for Services (SAM) and the Captured Market (SOM). This visualization emphasizes the importance of focusing on the pediatric market, particularly the youngest patients, and provides a roadmap for growth as we expand our reach and capture a larger share of the available market.
-                </p>
+
+                <!-- Conclusion Box -->
+                <div class="p-6 bg-white shadow-lg rounded-lg border-l-4 border-gray-500 animate__animated animate__bounceIn">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">Market Gap</h3>
+                    <ul class="list-disc pl-5 text-gray-600 mb-4">
+                        <li>
+                            The laryngoscope, although widely used and low-cost, has a success rate of less than 50% on the first attempt.
+                        </li>
+                        <li>
+                            The videolaryngoscope is the gold standard but is expensive, making it inaccessible for public healthcare in countries like Brazil.
+                        </li>
+                        <li>
+                            The laryngeal mask (fasttrack) is a cost-effective solution but is not available for pediatric use.
+                        </li>
+                    </ul>
+                    <p class="text-gray-600">
+                        The gap lies in developing a device that enables quick, effective intubation with minimal training and low cost.
+                    </p>
+                </div>
+                
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     
