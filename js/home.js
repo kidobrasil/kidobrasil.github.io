@@ -14,7 +14,7 @@ const particlesGeometry = new THREE.BufferGeometry();
 const positions = new Float32Array(particlesCount * 3);
 const colors = new Float32Array(particlesCount * 3);
 
-const colorOptions = [new THREE.Color("#ADD8E6"), new THREE.Color("#98FB98"), new THREE.Color("#FFD700"), new THREE.Color("#FFCBA4"), new THREE.Color("#E6E6FA")];
+const colorOptions = [new THREE.Color("#ffc39a"), new THREE.Color("#5ab993"), new THREE.Color("#fb9250"), new THREE.Color("#2f78ba"), new THREE.Color("#333333")];
 
 for (let i = 0; i < particlesCount; i++) {
     positions[i * 3] = (Math.random() - 0.5) * 10;
