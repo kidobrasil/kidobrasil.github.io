@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Keep it on top of particles */
+}
+
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Ensure canvas is in the background */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none; /* Prevents interaction */
+}
+
+#problem-section {
+    background-color: #f9fafb; /* Light background color */
+    padding: 50px 20px;
+}
+
+.problem-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 12px; /* Soft rounded corners */
+}
+
+.problem-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add larger shadow on hover */
+}
+
+
+

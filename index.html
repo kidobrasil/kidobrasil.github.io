@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Particle Animation with Text</title>
+    <!-- Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body class="relative h-screen w-screen text-black">
+    <!-- 3D Canvas Scene -->
+    <div id="canvas-container" class="absolute inset-0 z-0"></div>
+
+    <!-- Centered Content (Logo & Paragraphs) -->
+    <div class="flex flex-col items-center justify-center h-full z-10 relative px-4 text-center">
+        <!-- Logo -->
+        <img src="images/logo.png" alt="Logo" class="w-64 h-auto md:w-96 lg:w-128 mb-4 md:mb-8">
+        
+        <!-- Main Message -->
+        <p class="text-lg md:text-2xl lg:text-4xl font-semibold mb-4">
+            Breathing new air into pediatric care
+        </p>
+
+        <!-- New Paragraph: Value Proposition -->
+        <div class="text-lg md:text-base lg:text-lg space-y-4">
+            <p>
+                Assertive Intubation without visualization
+            </p>
+            <p>
+                Kido is a startup focused on pediatric patients, designing medical devices suitable for this group.
+            </p>
+        </div>
+    </div>
+    
+  
+    <section id="problem-section" class="w-full min-h-screen bg-white flex flex-col justify-center items-center py-8 px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Why Pediatric Patients Face Higher Risks in Care</h2>
+    
+        <!-- Problem Boxes and Chart -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
+            <!-- First Row: Three Boxes -->
+            <!-- Box 1-->
+            <div class="problem-box p-6 bg-gray-100 rounded-lg shadow-md text-center" data-animation="animate__backInLeft">
+                <h3 class="text-xl font-bold mb-4 text-green-600">Lack of Pediatric-Specific Devices</h3>
+                <p class="text-base text-gray-700">
+                    Most airway management devices available today are designed for adults and resized for children.
+                </p>
+            </div>
+            <!-- Box 2 -->
+            <div class="problem-box p-6 bg-gray-100 rounded-lg shadow-md text-center" data-animation="animate__zoomIn">
+                <h3 class="text-xl font-bold mb-4 text-blue-600">Unique and Complex Anatomy</h3>
+                <p class="text-base text-gray-700">
+                    Children's anatomy differs greatly from adults, requiring specially designed devices for safe treatment.
+                </p>
+            </div>
+            
+            <!-- Box 3-->
+            <div class="problem-box p-6 bg-gray-100 rounded-lg shadow-md text-center" data-animation="animate__slideInRight">
+                <h3 class="text-xl font-bold mb-4 text-red-600">Limited Number of Trained Professionals</h3>
+                <p class="text-base text-gray-700">
+                    There is a shortage of healthcare professionals trained in pediatric airway management, increasing the risks.
+                </p>
+            </div>
+    
+            <!-- Second Row: Fourth Box on the left, Chart on the right -->
+            <!-- Box 4-->
+            <div class="problem-box p-6 bg-gray-100 rounded-lg shadow-md text-center md:col-span-1" data-animation="animate__fadeInLeft">
+                <h3 class="text-xl font-bold mb-4 text-purple-600">Lack of Trained Specialists</h3>
+                <p class="text-base text-gray-700">
+                    Muitas intubações pediátricas no Brasil são realizadas por não especialistas ou por profissionais não treinados para intubação pediátrica.
+                </p>
+            </div>
+    
+            <!-- Chart: Span across two columns -->
+            <div id="chart-container" class="md:col-span-2">
+                <img src="images/chart.png" alt="Comparison of Hospital Beds and Specialists" class="w-full h-auto">
+                <p class="text-center text-gray-600 mt-4">Data Source: Healthcare Statistics 2023</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+
+ <!-- New Section: Market -->
+<section id="market-breakdown" class="w-full min-h-screen bg-gray-50 flex flex-col justify-center items-center py-12 px-6">
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center w-full text-gray-800 mb-8">Market Breakdown: From Total Opportunity to Captured Market</h2>
+    
+    <!-- Flex Container for Images and Text -->
+    <div class="flex flex-col md:flex-row w-full max-w-7xl items-start gap-12">
+        
+        <!-- Left Column: Stacked Images -->
+        <div class="md:w-1/2 space-y-6"> <!-- space-y-6 adds vertical space between images -->
+            <!-- Waterfall Chart (First Image) -->
+            <div class="relative w-full h-full shadow-lg rounded-xl overflow-hidden">
+                <img src="images/market.png " alt="Market Breakdown Waterfall Chart" class="w-full h-auto rounded-xl">
+            </div>
+
+            <!-- Second Image (Newly Added) -->
+            <div class="relative w-full h-full shadow-lg rounded-xl overflow-hidden pt-4">
+                <img src="images/gap.jpeg" alt="Second Market Breakdown Chart" class="w-full h-auto rounded-xl">
+            </div>
+        </div>
+        
+        <!-- Right Column: Text with Animation -->
+        <div class="md:w-1/2 md:pl-8 text-left animate__animated animate__fadeInUp">
+            <!-- Box 1 -->
+            <div class="p-6 mb-6 bg-white shadow-lg rounded-lg border-l-4 border-blue-500 animate__animated animate__fadeInLeft">
+                <h3 class="text-2xl font-bold mb-2 text-blue-500">Total Addressable Market (TAM)</h3>
+                <p class="text-gray-600">
+                    The largest potential market, combining all possible pediatric and adult patients, valued at <strong>$187.8 million</strong>.
+                </p>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="p-6 mb-6 bg-white shadow-lg rounded-lg border-l-4 border-red-500 animate__animated animate__fadeInUp">
+                <h3 class="text-2xl font-bold mb-2 text-red-500">Available Market for Services (SAM)</h3>
+                <p class="text-gray-600">
+                    Focusing specifically on children under 15, this segment reduces to <strong>$28.17 million</strong>.
+                </p>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="p-6 mb-6 bg-white shadow-lg rounded-lg border-l-4 border-green-500 animate__animated animate__fadeInRight">
+                <h3 class="text-2xl font-bold mb-2 text-green-500">Captured Market (SOM)</h3>
+                <p class="text-gray-600">
+                    The most relevant market, focusing on children under 1 year, where we expect to engage directly, valued at <strong>$5.63 million</strong>.
+                </p>
+            </div>
+
+            <!-- Conclusion Box -->
+            <div class="p-6 bg-white shadow-lg rounded-lg border-l-4 border-gray-500 animate__animated animate__bounceIn">
+                <h3 class="text-2xl font-bold mb-2 text-gray-800">Conclusion</h3>
+                <p class="text-gray-600">
+                    The Stacked Bar Chart shows the progression from the broad Total Addressable Market (TAM) to the more focused segments where our solutions are most effective, including the Available Market for Services (SAM) and the Captured Market (SOM). This visualization emphasizes the importance of focusing on the pediatric market, particularly the youngest patients, and provides a roadmap for growth as we expand our reach and capture a larger share of the available market.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+    
+    
+
+
+
+    <!-- New Section Solution-->
+    <section id="contact-section" class="w-full min-h-screen bg-white flex flex-col items-center justify-center text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Solution </h2>
+        <p class="text-base md:text-lg lg:text-xl max-w-2xl mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident est necessitatibus, ipsam autem illo pariatur nesciunt debitis quos temporibus cum eius ullam saepe fuga quia ad consequuntur sit ut ab!.        </p>
+        <a href="mailto:info@kidosolutions.com" class="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600">
+            Email Us
+        </a>
+    </section>
+
+    <!-- New Section: Contact Us -->
+    <section id="contact-section" class="w-full min-h-screen bg-white flex flex-col items-center justify-center text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Contact Us</h2>
+        <p class="text-base md:text-lg lg:text-xl max-w-2xl mb-8">
+            Interested in learning more? Contact us to find out how we can collaborate to improve pediatric care through innovative medical devices.
+        </p>
+        <a href="mailto:info@kidosolutions.com" class="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600">
+            Email Us
+        </a>
+    </section>
+
+    <!-- Three.js Particle Animation Script -->
+    <script type="module" src="./js/home.js"></script>
+    <script type="module" src="./js/problem.js"></script>
+    <script type="module" src="./js/market.js"></script>
+
+</body>
+</html>
