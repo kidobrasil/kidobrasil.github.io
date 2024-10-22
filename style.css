@@ -74,6 +74,15 @@ canvas {
     pointer-events: none; /* Ensure that the particles don't interfere with clicking */
 }
 
+.opacity-0 {
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Ensure a smooth transition when becoming visible */
+}
+
+.animate__animated {
+    opacity: 1 !important; /* Ensure the element is fully visible when animated */
+}
+
 
 
 
