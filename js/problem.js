@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 observer.unobserve(entry.target); // Only trigger the animation once
             }
         });
-    }, { threshold: 0.2 }); // Trigger when 10% of the element is visible
+    }, { threshold: 0.5 }); // Trigger when 10% of the element is visible
 
     problemBoxes.forEach(box => {
         observer.observe(box);

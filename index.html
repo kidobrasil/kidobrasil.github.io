@@ -42,12 +42,12 @@
         <img src="images/logo.png" alt="Logo" class="w-64 h-auto md:w-96 lg:w-128 mb-4 md:mb-8">
         
         <!-- Main Message -->
-        <p class="text-lg md:text-2xl lg:text-5xl font-semibold mb-4">
+        <p class="text-3xl md:text-4xl lg:text-6xl font-semibold mb-4">
             Breathing new air into pediatric care
         </p>
 
         <!-- New Paragraph: Value Proposition -->
-        <div class="text-lg md:text-base lg:text-2xl space-y-4">
+        <div class="text-xl md:text-3xl lg:text-4xl space-y-4">
             <p>
                 Assertive Intubation without visualization
             </p>
@@ -55,11 +55,12 @@
                 Kido is a startup focused on pediatric patients, designing medical devices suitable for this group.
             </p>
         </div>
+
     </div>
     
   
     <section id="problem-section" class="w-full min-h-screen bg-white flex flex-col justify-center items-center py-8 px-4">
-        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Why Pediatric Patients Face Higher Risks in Care</h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">Why Pediatric Patients Face Higher Risks in Care</h2>
     
         <!-- Problem Boxes and Chart -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
@@ -216,9 +217,10 @@
                 <span style="color: #333333;">NO VISUALIZATION NEEDED</span>
             </p>
 
-            <p class="text-xl md:text-2xl lg:text-3xl font-bold text-green-500 text-center md:text-left">
-                <span class="inline-block"><svg class="h-6 w-6 inline text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></span>
-                Safe, Accurate, Easy to Use, and Designed for Kids
+            <p class="text-xl md:text-2xl lg:text-3xl font-bold text-center md:text-left">
+                <span style="color: #fb9250
+;"class="inline-block"><svg class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></span>
+                <span style="color: #fb9250;">Safe, Accurate, Easy to Use, and Designed for Kids</span>
             </p>
 
 
@@ -234,6 +236,8 @@
             </div>
         </div>
     </section>
+
+
 
 <!-- Roadmap Section -->
 <section id="roadmap-section" class="w-full min-h-screen bg-gray-50 flex flex-col justify-center items-center py-16 px-6">
@@ -257,20 +261,48 @@
 
 
 
-
-
-
-
-    <!-- New Section: Contact Us -->
-    <section id="contact-section" class="w-full min-h-screen bg-white flex flex-col items-center justify-center text-center px-4">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Contact Us</h2>
-        <p class="text-base md:text-lg lg:text-xl max-w-2xl mb-8">
-            Interested in learning more? Contact us to find out how we can collaborate to improve pediatric care through innovative medical devices.
+<!-- Contact Section with Three.js Background -->
+<section id="contact-section" class="relative w-full min-h-screen bg-gray-100 flex flex-col justify-center items-center py-16 px-6">
+    <!-- Three.js Canvas -->
+    <div id="contact-canvas-container" class="absolute inset-0 z-0"></div>
+    
+    <!-- Contact Form and Content -->
+    <div class="relative z-10 w-full max-w-xl bg-white shadow-lg rounded-lg p-8">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center w-full mb-8">Contact Us</h2>
+        <p class="text-lg md:text-xl text-gray-600 text-center max-w-2xl mb-8">
+            We'd love to hear from you! Whether you have a question or just want to say hi, feel free to reach out to us.
         </p>
-        <a href="mailto:info@kidosolutions.com" class="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600">
-            Email Us
-        </a>
-    </section>
+        
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/mnnqnvag" method="POST" class="space-y-6">
+            <div>
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
 
     <!-- Three.js Particle Animation Script -->
     <script type="module" src="./js/home.js"></script>
@@ -278,6 +310,8 @@
     <script type="module" src="./js/market.js"></script>
     <script type="module" src="./js/solution.js"></script>
     <script type="module" src="./js/roadmap.js"></script>
+    <script type="module" src="./js/contact.js"></script>
+
 
 
 </body>

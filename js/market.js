@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 observer.unobserve(entry.target); // Stop observing after animation is triggered
             }
         });
-    }, { threshold: 0.2 }); // Trigger when 10% of the section is visible
+    }, { threshold: 0.5 }); // Trigger when 10% of the section is visible
 
     observer.observe(marketSection); // Start observing the market section
 });
