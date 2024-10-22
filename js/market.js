@@ -23,3 +23,4 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(marketSection); // Start observing the market section
 });
 
+
