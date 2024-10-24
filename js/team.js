@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Select all the market-content boxes
-    const marketBoxes = document.querySelectorAll('.market-content');
+    const marketBoxes = document.querySelectorAll('.team-content');
 
     // Create an IntersectionObserver to observe when the market section enters view
     const observer = new IntersectionObserver((entries, observer) => {
@@ -20,5 +20,3 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(box);
     });
 });
-
-
