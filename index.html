@@ -26,7 +26,12 @@
     <meta name="twitter:image" content="https://kidobrasil.github.io/images/logo.png">
 
     <!-- Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.googletagmanager.com;">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        script-src 'self' https://www.googletagmanager.com; 
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+        font-src 'self' https://fonts.gstatic.com; 
+        img-src 'self' data:;">
 
 
     <title>Kido</title>
